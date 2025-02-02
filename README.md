@@ -19,7 +19,7 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 #### Desktop
 
-![Desktop](./design/solution/desktop.jpg)
+![Desktop](./design/solution/desktop.png)
 
 #### Mobile
 

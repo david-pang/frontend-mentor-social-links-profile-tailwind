@@ -2,14 +2,38 @@
 
 @theme {
     --color-dark-grey: #1f1f1f;
+    --color-grey: #333333;
     --color-neon-green: #c4f82a;
 
     --font-inter: "Inter";
 
     --text-base-dynamic: max(1vw, 16px);
+
+    --button-bg-color: var(--color-grey);
+    --button-border-radius: var(--radius-lg);
+    --button-font-weight: 700;
+    --button-padding: 0.75rem;
+
+    --button-hover-bg-color: var(--color-neon-green);
+    --button-hover-color: var(--color-grey);
 }
 
 @font-face {
     font-family: "Inter";
     src: url("../fonts/inter/Inter-VariableFont_slnt,wght.ttf");
+}
+
+@layer components {
+    .button {
+        background-color: var(--button-bg-color);
+        border-radius: var(--button-border-radius);
+        display: inline-flex;
+        font-weight: var(--button-font-weight);
+        padding: var(--button-padding);
+
+        @variant hover {
+            background-color: var(--button-hover-bg-color);
+            color: var(--button-hover-color);
+        }
+    }
 }
