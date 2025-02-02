@@ -697,6 +697,27 @@
       }
     }
   }
+  .hover\:text-dark-grey {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-dark-grey);
+      }
+    }
+  }
+  .hover\:text-grey {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-grey);
+      }
+    }
+  }
+  .hover\:text-neon-green {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-neon-green);
+      }
+    }
+  }
   .md\:min-w-3\/10 {
     @media (width >= 48rem) {
       min-width: calc(3/10 * 100%);
